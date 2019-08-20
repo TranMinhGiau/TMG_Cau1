@@ -7,7 +7,22 @@
     tools:context="com.example.student.myapplication.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonbye"
+        android:layout_width="272dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Click to good bye"
+        app:layout_constraintBottom_toBottomOf="@+id/mytext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <Button
+        android:id="@+id/buttonsay"
         android:layout_width="272dp"
         android:layout_height="58dp"
         android:layout_marginBottom="8dp"
@@ -19,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.508" />
+        app:layout_constraintVertical_bias="0.362" />
 
     <EditText
         android:id="@+id/yourname"
@@ -32,7 +47,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="EnterYourName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonsay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -10,7 +10,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView txt;
-    Button btn;
+    Button btnsay;
+    Button btnbye;
     EditText Etxt;
 
     @Override
@@ -19,14 +20,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Etxt = (EditText) findViewById(R.id.yourname);
         txt = (TextView) findViewById(R.id.mytext);
-        btn = (Button) findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener() {
+        btnsay = (Button) findViewById(R.id.buttonsay);
+        btnbye = (Button) findViewById(R.id.buttonbye);
+        btnsay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 txt.setText("Xin chao: " + Etxt.getText());
             }
         });
 
+        btnbye.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                txt.setText("Good bye: " + Etxt.getText());
+            }
+        });
     }
 
 
